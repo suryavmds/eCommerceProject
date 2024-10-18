@@ -1,0 +1,7 @@
+to run application (root bckend folder)
+
+dotnet run --project src/EcommerceBackend/EcommerceBackend.csproj
+
+to run tests
+
+dotnet test tests/EcommerceBackend.Tests/EcommerceBackend.Tests.csproj
