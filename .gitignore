@@ -1,0 +1,14 @@
+# ASP.NET Core
+bin/
+obj/
+*.db
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Angular
+/frontend/node_modules
+/frontend/dist
+/frontend/.angular
+.DS_Store
