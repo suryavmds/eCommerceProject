@@ -5,3 +5,9 @@ dotnet run --project src/EcommerceBackend/EcommerceBackend.csproj
 to run tests
 
 dotnet test tests/EcommerceBackend.Tests/EcommerceBackend.Tests.csproj
+
+
+add database
+dotnet ef migrations add SeedProducts --project src/EcommerceBackend --startup-project src/EcommerceBackend
+to update database from backend root
+dotnet ef database update --project src/EcommerceBackend

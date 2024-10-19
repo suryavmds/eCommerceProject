@@ -43,10 +43,17 @@
 //     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 // }
 
+using Microsoft.EntityFrameworkCore;
+using EcommerceBackend.Data;
+
 using EcommerceBackend.Core.Interfaces;
 using EcommerceBackend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? "Data Source=Ecommerce.db";
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite(connectionString));
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

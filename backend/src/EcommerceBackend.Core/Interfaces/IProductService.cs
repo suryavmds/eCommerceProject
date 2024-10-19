@@ -1,4 +1,5 @@
 using EcommerceBackend.Core.Models;
+using System.Collections.Generic;
 
 namespace EcommerceBackend.Core.Interfaces
 {
